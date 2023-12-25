@@ -1,9 +1,7 @@
+# Real-Time Chat Application Documentation
 
-#Real-Time Chat Application Documentation
-
-##Overview
-The application that allows multiple users to join chat rooms and communicate with each other. The application will be built using Node.js, Express.js, and Socket.IO for real-time communication.
-
+## Overview
+The application allows multiple users to join chat rooms and communicate with each other. The application will be built using Node.js, Express.js, and Socket.IO for real-time communication.
 
 ## How To Run The Project
 
@@ -25,21 +23,16 @@ https://github.com/ManishaNath/Real-Time-Chat-Application/tree/dev
 # Architecture
 
 ## Backend
-The backend is built using Node.js with Express.js as the web application framework. MongoDB is used as the database to store user information, preferences, and other relevant data. Mongoose is employed as an ODM (Object Data Modeling) library for MongoDB.
-
-## Controllers
-### User Authentication: 
-Handles user signup, login, and token generation using bcrypt for password hashing and JWT (JSON Web Token) for authentication.
-
-### User Preferences:
-Manages user preferences, allowing users to set their preferred topics for news articles.
-
-### News Aggregation: 
-Fetches news articles from external APIs based on user preferences.
+The backend is built using Node.js with Express.js as the web application framework. 
+### index.js
+This server script enables real-time communication between clients through Socket.IO, handling user connections, disconnections, and message exchanges within specific chat rooms. The server also serves static files for the client-side application
 
 ## Client 
-### index.html, chat.html
-index.html, is the main entry point for a web application related to Women in Tech and Blockchain. chat.html, represents a web page for a blockchain chat application. 
+### index.html
+index.html, is the main entry point for a web application related to Women in Tech and Blockchain. 
+
+### chat.html
+ chat.html represents a web page for a blockchain chat application. 
 
 ### css -style.css
 CSS stylesheet that defines the styling for a web application with two main pages: a chat page (chat.html) and a main page
